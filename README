@@ -1,0 +1,14 @@
+This program draws heavily from several examples.
+Each file states which example it originates from.
+
+100 GeV muons are shot on a silicon target in an air-filled world.
+The PAI model is used (PAI gamma is turned off).
+The Penelope Em libraries are used.
+The maximum step size in Si is 1 um.
+
+The scoring is done using hits and sensitive detector classes.
+The histograms and root trees are done using the histomanager class.
+
+A messenger for the detector construction is implemented to change the Si thickness.
+
+

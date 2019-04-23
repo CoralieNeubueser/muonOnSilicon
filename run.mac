@@ -1,0 +1,48 @@
+#
+# Macro file for "AnaEx01.cc"
+# 
+# can be run in batch, without graphic
+# or interactively: Idle> /control/execute run.mac
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+/run/printProgress 10000
+#
+# initialize
+/run/initialize
+#
+# set silicon thickness
+/muOnSi/det/siThickness 10 um
+/muOnSi/histo/outFileName 10um
+#
+/gun/particle mu-
+/gun/energy 100 GeV
+/run/beamOn 100000
+
+# produce data for comparison with bichsel theory
+
+# /muOnSi/det/siThickness 10 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/10um
+# /run/beamOn 100000
+
+# /muOnSi/det/siThickness 20 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/20um
+# /run/beamOn 100000
+
+# /muOnSi/det/siThickness 40 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/40um
+# /run/beamOn 100000
+
+# /muOnSi/det/siThickness 80 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/80um
+# /run/beamOn 100000
+
+# /muOnSi/det/siThickness 160 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/160um
+# /run/beamOn 100000
+
+# /muOnSi/det/siThickness 320 um
+# /muOnSi/histo/outFileName /home/vigna/data/thiknessStudyMuOnSi/320um
+# /run/beamOn 100000
