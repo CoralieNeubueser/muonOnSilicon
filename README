@@ -1,7 +1,4 @@
-
-# muonOnSilicon
-
-This program draws heavily from several examples.
+This program draws heavily from several Geant4 examples.
 Each file states which example it originates from.
 
 100 GeV muons are shot on a silicon target in an air-filled world.
