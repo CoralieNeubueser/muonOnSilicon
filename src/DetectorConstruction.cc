@@ -29,7 +29,7 @@ DetectorConstruction::DetectorConstruction()
 {
 
   _messenger = new DetectorMessenger(this);
-  _siThick = 160*um;
+  _siThick = 100*um;
   
   return;
 }
@@ -75,7 +75,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                                    
   G4VPhysicalVolume* physWorld = 
     new G4PVPlacement(0,                     //no rotation
-                      G4ThreeVector(),       //at (0,0,0)
+                      G4ThreeVector(0,0,0),       //at (0,0,0)
                       logicWorld,            //its logical volume
                       "World",               //its name
                       0,                     //its mother  volume

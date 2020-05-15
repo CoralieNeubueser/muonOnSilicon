@@ -28,8 +28,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction* DC)
                     = particleTable->FindParticle(particleName="mu-");
   fParticleGun->SetParticleDefinition(particle);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-  fParticleGun->SetParticleEnergy(100.*GeV);
-  G4double position = -0.5*(fDetector->GetWorldSizeZ());
+  fParticleGun->SetParticleEnergy(120.*MeV);
+  G4double position = -15.; //-0.5*(fDetector->GetWorldSizeZ());
   fParticleGun->SetParticlePosition(G4ThreeVector(0*cm,0.*cm,position));
 
 }

@@ -49,7 +49,7 @@ void HistoManager::Book()
   // analysisManager->SetFirstHistoId(1);  
   
   // id = 0
-  analysisManager->CreateH1("Edep","Deposited energy in Silicon", 5000, 0., 0.2*MeV);
+  analysisManager->CreateH1("Edep","Deposited energy in Silicon", 5000, 0., 1*MeV);
   analysisManager->SetH1XAxisTitle(0, "Energy [MeV]");
   analysisManager->SetH1YAxisTitle(0, "Entries");
   // id = 1
